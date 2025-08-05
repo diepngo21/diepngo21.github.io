@@ -1,0 +1,453 @@
+.projectsPg-section {
+  font-family: "Eczar", serif;
+  color: var(--brown);
+}
+.projectsPg-container {
+  background-color: #ffddbf;
+  padding: 40px 112px;
+  font-family: "Eczar", serif;
+  color: var(--brown);
+}
+
+.projectsPg-header-section {
+  background-color: #ffeed9;
+  padding: 100px 112px;
+}
+.projectsPg-header h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+.projectsPg-header p {
+  font-size: 1.5rem;
+  color: var(--light-brown);
+  font-family: "Work Sans", sans-serif;
+}
+
+.projectsPg-projects {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+.projectsPg-text-name {
+  font-weight: bolder;
+}
+
+.projectsPg-img {
+  border-radius: 15px;
+  width: 100%;
+
+  height: 100%;
+}
+.projectsPg-description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.projectsPg-text {
+  margin-top: 20px;
+  color: var(--light-brown);
+  font-family: "Work Sans", sans-serif;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f8f9fa;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.carousel-img:hover {
+  transform: scale(1.05);
+}
+
+/* Carousel Navigation Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn-prev {
+  left: 10px;
+}
+
+.carousel-btn-next {
+  right: 10px;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  z-index: 10;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background: rgba(15, 15, 15, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-dot:hover {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(255, 255, 255, 1);
+  transform: scale(1.2);
+}
+
+.carousel-dot.active {
+  background: rgb(195, 138, 41);
+  border-color: rgba(255, 255, 255, 1);
+  transform: scale(1.3);
+}
+
+.carousel-counter {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .carousel-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .carousel-btn-prev {
+    left: 5px;
+  }
+
+  .carousel-btn-next {
+    right: 5px;
+  }
+
+  .carousel-img {
+    height: 250px;
+  }
+
+  .carousel-slide {
+    min-height: 250px;
+  }
+
+  .carousel-dots {
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-img {
+    height: 200px;
+  }
+
+  .carousel-slide {
+    min-height: 200px;
+  }
+
+  .carousel-dots {
+    gap: 6px;
+    bottom: 8px;
+  }
+
+  .carousel-dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+
+/* Project Link Styles - Add this to your projectsPage.css */
+
+.project-link {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px; /* Match your existing border-radius */
+  overflow: hidden;
+  width: 100%; /* Ensure full width like your images */
+}
+
+.project-link:hover {
+  transform: translateY(-3px) scale(1.01); /* Subtle effect to not interfere with carousel */
+  box-shadow: 0 8px 20px rgba(195, 138, 41, 0.2); /* Use your brown color theme */
+}
+
+.project-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(195, 138, 41, 0.1); /* Use your brown theme */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  border-radius: 15px;
+}
+
+.project-link:hover::after {
+  opacity: 1;
+}
+
+/* Ensure project images maintain your existing styles */
+.project-link {
+  cursor: pointer;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.project-link:hover .projectsPg-img {
+  filter: brightness(1.05) contrast(1.02);
+}
+
+/* Carousel Link Wrapper */
+.project-link-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Clickable Carousel Styles */
+.clickable-carousel {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clickable-carousel:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(195, 138, 41, 0.2);
+}
+
+.clickable-carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(195, 138, 41, 0.05);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  border-radius: 12px;
+}
+
+.clickable-carousel:hover::after {
+  opacity: 1;
+}
+
+.carousel-btn {
+  z-index: 15;
+  position: relative;
+}
+
+.carousel-dots {
+  z-index: 15;
+  position: relative;
+}
+
+.carousel-dot {
+  position: relative;
+  z-index: 15;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.project-link:focus,
+.carousel-overlay-link:focus {
+  outline: 2px solid #c38a29; 
+  outline-offset: 2px;
+}
+
+.projectsPg-description:hover .project-link {
+  transform: translateY(-2px);
+}
+
+.project-link-wrapper:hover .carousel-img {
+  transform: scale(1.05); 
+}
+
+.project-link {
+  position: relative;
+}
+
+.project-link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: border-color 0.3s ease;
+  pointer-events: none;
+}
+
+.project-link:hover:before {
+  border-color: rgba(195, 138, 41, 0.3);
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+  .project-link:hover {
+    transform: translateY(-1px); /
+  }
+}
+
+.projectsPg-img {
+  border-radius: 15px;
+  width: 100%;
+  height: 300px; 
+  object-fit: cover; 
+  object-position: center;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 300px; 
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.carousel-img:hover {
+  transform: scale(1.05);
+}
+
+/* Update carousel slide container */
+.carousel-slide {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.no-cursor {
+  cursor: default !important;
+}
+
+.img-top {
+  object-position: top !important;
+}
+
+.img-bottom {
+  object-position: bottom !important;
+}
+
+.img-left {
+  object-position: left !important;
+}
+
+.img-right {
+  object-position: right !important;
+}
+
+.img-scale-down {
+  object-fit: cover;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.img-scale-down:hover {
+  transform: scale(0.95);
+}
+@media (max-width: 768px) {
+  .projectsPg-img,
+  .carousel-img {
+    height: 250px; 
+  }
+
+  .carousel-slide {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectsPg-img,
+  .carousel-img {
+    height: 200px; 
+  }
+
+  .carousel-slide {
+    min-height: 200px;
+  }
+}

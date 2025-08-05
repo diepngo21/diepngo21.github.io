@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.project-header {
+  color: #403930;
+  font-weight: bolder;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.project-section {
+  font-family: "Eczar", serif;
+  background-color: #ffddbf;
+  padding: 75px 112px;
+}
+
+.co-projects {
+  width: 100%;
+  display: flex;
+}
+.co-projects div {
+  margin-right: 20px;
+}
+.co-projects-text {
+  width: 100% !important;
+  margin: 20px;
+}
+
+.co-fun-projecs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects {
+  background-color: #fff8f2;
+  display: flex;
+  border-radius: 15px;
+  justify-content: space-evenly;
+  margin-bottom: 32px;
+}
+.projects img {
+  height: 250px;
+  width: 500px;
+  margin: 20px;
+  object-fit: fill;
+  transition: transform 0.2s;
+  border-radius: 15px;
+}
+
+.projects img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.non-cursor:hover {
+  cursor: default !important;
+}
+.projects-video {
+  height: 300px;
+  width: 600px;
+  margin: 20px;
+}
+.projects-container {
+  margin-bottom: 28px;
+}
+.projects-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+  font-family: "Work Sans", sans-serif;
+}
+
+.projects-text * {
+  margin-bottom: 12px;
+}
+.projects-header {
+  font-size: 32px;
+  font-weight: 500;
+}
+.projects-link {
+  color: #4e5e80;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.projects-link:hover {
+  color: #a4a8af;
+}
+
+.project-more-btn {
+  display: flex;
+  padding: 15px;
+  border: 2px solid #4d5566;
+  margin-top: 20px;
+  width: 15%;
+  border-radius: 15px;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.project-more-btn a {
+  text-decoration: none;
+  color: #4d5566;
+  transition: color 0.3s ease;
+}
+
+.project-more-btn:hover {
+  background-color: #4d5566;
+  border-color: #4d5566;
+  cursor: pointer;
+}
+
+.project-more-btn:hover a {
+  color: white;
+}

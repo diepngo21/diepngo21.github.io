@@ -1,0 +1,242 @@
+.contact-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffeed9 0%, #fef3e2 50%, #ffeed9 100%);
+  padding: 4rem 1rem;
+}
+
+.contact-container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact-header h2 {
+  font-size: 3rem;
+  font-weight: bold;
+
+  color: var(--brown);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.contact-header p {
+  font-size: 1.25rem;
+  color: var(--light-brown);
+  max-width: 32rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+
+  border: 1px solid var(--brown);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon svg {
+  width: 2rem;
+  height: 2rem;
+  color: white;
+}
+
+.email-icon {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.linkedin-icon {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+}
+
+.contact-card h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+
+  color: var(--brown);
+  margin-bottom: 0.5rem;
+}
+
+.contact-card a {
+  color: var(--light-brown);
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+  color: #92400e;
+}
+
+.contact-card p {
+  color: #a16207;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.contact-cta {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  border-radius: 1.5rem;
+  padding: 3rem;
+
+  border: 1px solid var(--brown);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.cta-content {
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.cta-icon {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.cta-icon svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: white;
+}
+
+.contact-cta h3 {
+  font-size: 1.875rem;
+  font-weight: bold;
+
+  color: var(--brown);
+  margin-bottom: 1rem;
+}
+
+.contact-cta p {
+  font-size: 1.125rem;
+  color: var(--light-brown);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.discord-icon {
+  background: linear-gradient(135deg, #5865f2 0%, #4752c4 100%);
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-primary {
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #4d5566;
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .contact-header p {
+    font-size: 1.125rem;
+  }
+
+  .contact-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .contact-cta {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-cta h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact-cta p {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+
+  .contact-header {
+    margin-bottom: 2rem;
+  }
+
+  .contact-header h2 {
+    font-size: 2rem;
+  }
+
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+}

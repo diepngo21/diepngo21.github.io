@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  background-color: #ffeed9;
+  background-size: cover;
+  background-position: center;
+}
+
+:root {
+  --brown: #403930;
+  --light-brown: #594f43;
+}
