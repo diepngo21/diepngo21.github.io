@@ -83,6 +83,7 @@ export const Projects = () => {
           <a href="https://chabotforge.org/" target="_blank">
             {" "}
             <img
+              className="projects-img"
               src={forge}
               href="https://chabotforge.org/"
               data-tooltip="Click to view Chabot Forge - Engineering Maker Lab"
@@ -100,7 +101,11 @@ export const Projects = () => {
             </p>
           </div>
           <a href="https://diepngo21.github.io/Netflix_V2/" target="_blank">
-            <img src={netflix} data-tooltip="View the project live" />
+            <img
+              className="projects-img"
+              src={netflix}
+              data-tooltip="View the project live"
+            />
           </a>
         </div>
         <div className="projects">
@@ -114,11 +119,17 @@ export const Projects = () => {
               list.
             </p>
           </div>
-          <img
-            className="non-cursor"
-            src={mapty}
-            data-tooltip="No longer have access"
-          />
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/diepngo21/Mapty"
+          >
+            <img
+              className="projects-img"
+              src={mapty}
+              data-tooltip="View Repository"
+            />
+          </a>
         </div>
       </div>
       <div className="project-header">Collaborative / Fun Projects</div>

@@ -30,3 +30,60 @@
   color: #594f43;
   font-size: 1.2rem;
 }
+
+.navbar-option {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  display: inline-block;
+  padding: 8px 16px;
+  margin-bottom: 12px;
+}
+
+.navbar-option.active {
+  color: #c38a29 !important;
+  font-weight: bold;
+  position: relative;
+}
+
+.navbar-option.active::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(135deg, #c38a29, #a67a20);
+  border-radius: 2px;
+  animation: slideInUnderline 0.3s ease-out;
+}
+
+.navbar-option.active {
+  text-shadow: 0 0 8px rgba(195, 138, 41, 0.3);
+  background: linear-gradient(
+    135deg,
+    rgba(195, 138, 41, 0.1),
+    rgba(255, 238, 217, 0.2)
+  );
+  border-radius: 8px;
+  border: 1px solid rgba(195, 138, 41, 0.2);
+}
+
+.navbar-option:not(.active):hover {
+  color: #8b6914;
+  transition: all 0.3s ease;
+  background: rgba(195, 138, 41, 0.05);
+  border-radius: 8px;
+}
+
+@keyframes slideInUnderline {
+  from {
+    width: 0;
+    left: 50%;
+    right: 50%;
+  }
+  to {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+}

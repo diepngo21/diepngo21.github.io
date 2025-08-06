@@ -38,16 +38,15 @@
   justify-content: space-evenly;
   margin-bottom: 32px;
 }
-.projects img {
+.projects-img {
   height: 250px;
   width: 500px;
   margin: 20px;
   object-fit: fill;
   transition: transform 0.2s;
-  border-radius: 15px;
 }
 
-.projects img:hover {
+.projects-img:hover {
   transform: scale(1.2);
   cursor: pointer;
 }

@@ -2,7 +2,9 @@
   font-family: "Eczar", serif;
   color: var(--brown);
 }
-
+.projectsPg-header-section p {
+  font-size: 1.2rem;
+}
 .projectsPg-header {
   margin-bottom: 45px;
 }
@@ -15,7 +17,7 @@
 
 .projectsPg-header-section {
   background-color: #ffeed9;
-  padding: 100px 112px;
+  padding: 80px 112px;
 }
 .projectsPg-header h1 {
   font-size: 4rem;
