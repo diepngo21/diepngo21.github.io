@@ -23,60 +23,6 @@ export const About = React.forwardRef((props, ref) => {
             continuous learning and staying up-to-date with the latest industry
             trends.
           </p>
-          <div className="email about-text" style={{ marginTop: "50px" }}>
-            <p>
-              Email:
-              <a
-                href="mailto:diepngo0531@gmail.com?&body=Message"
-                style={{ textDecoration: "none" }}
-              >
-                {" "}
-                <span style={{ textDecoration: "underline", color: "black" }}>
-                  diepngo0531@gmail.com
-                </span>
-              </a>
-            </p>
-          </div>
-
-          <div className="contact-animated-icons-container">
-            <a
-              className="animated-contact-icon-wrapper"
-              href="http://discord.com/users/670472609649000451"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <BsDiscord className="animated-contact-icon" />
-              <div className="animated-contact-details">
-                <p>Discord</p>
-                <p>Connect with me!</p>
-              </div>
-            </a>
-            <a
-              className="animated-contact-icon-wrapper delay-1"
-              href="https://github.com/diepngo21"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {" "}
-              <BsGithub className="animated-contact-icon" />
-              <div className="animated-contact-details">
-                <p>GitHub</p>
-                <p>My Projects</p>
-              </div>
-            </a>
-            <a
-              className="animated-contact-icon-wrapper delay-2"
-              href="https://www.linkedin.com/in/diepngo21/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <BsLinkedin className="animated-contact-icon" />
-              <div className="animated-contact-details">
-                <p>LinkedIn</p>
-                <p>Let's Connect</p>
-              </div>
-            </a>
-          </div>
         </div>
       </div>
     </div>

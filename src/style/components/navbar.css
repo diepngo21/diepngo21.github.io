@@ -11,8 +11,8 @@
 
 .home {
   font-weight: bold;
-  font-size: 22px;
   color: #594f43;
+  font-size: 2rem !important;
 }
 
 .navbar-option {
@@ -28,4 +28,5 @@
   padding: 0 10px;
   font-weight: bold;
   color: #594f43;
+  font-size: 1.2rem;
 }

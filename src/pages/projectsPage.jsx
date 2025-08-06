@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import "../style/pages/projectsPage.css";
 
 import forge from "../svg/forge_logo.png";
-import MediaFlow from "../svg/mediaflow.png";
+import netflix from "../svg/netflix.png";
 import mapty from "../svg/mapty.png";
 import weather from "../svg/weather.png";
-import fighting from "../svg/fightingGame.png";
+import bankist from "../svg/bankist.png";
 
-import Touchdesigner from "../svg/touchdesigner.png";
+import shopee from "../svg/shopee.png";
 import marketSystem from "../svg/marketsystem.png";
 import theband from "../svg/theband.png";
 import theband1 from "../svg/theband1.png";
@@ -179,7 +179,9 @@ export function ProjectsPage() {
       </div>
 
       <div className="projectsPg-container">
-        <h1>Most notable website and fun projects that I did</h1>
+        <h1 className="projectsPg-header">
+          Most notable website and fun projects that I did
+        </h1>
         <div className="projectsPg-projects">
           <div className="projectsPg-description">
             <a
@@ -206,20 +208,20 @@ export function ProjectsPage() {
 
           <div className="projectsPg-description">
             <a
-              href="https://diepngo21.github.io/MediaFlow/"
+              href="https://github.com/diepngo21/Netflix_V2"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
             >
               <img
                 className="projectsPg-img"
-                src={MediaFlow}
-                alt="MediaFlow project"
+                src={netflix}
+                alt="Netflix project"
                 data-tooltip="View the project live"
               />
             </a>
             <p className="projectsPg-text">
-              <span className="projectsPg-text-name">MediaFlow </span>- A
+              <span className="projectsPg-text-name">Netflix </span>- A
               responsive front-end streaming service with JavaScript, HTML, and
               CSS. Features dynamic content and demonstrates strong proficiency
               in DOM manipulation and API integration.
@@ -230,13 +232,14 @@ export function ProjectsPage() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              className="project-link no-cursor"
+              className="project-link"
+              href="https://github.com/diepngo21/Mapty"
             >
               <img
                 className="projectsPg-img"
                 src={mapty}
                 alt="Mapty project"
-                data-tooltip="No longer available"
+                data-tooltip="View Repository"
               />
             </a>
             <p className="projectsPg-text">
@@ -267,20 +270,22 @@ export function ProjectsPage() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              className="project-link no-cursor"
+              className="project-link "
+              href="https://github.com/diepngo21/shopee-project"
             >
               <img
                 className="projectsPg-img"
-                src={Touchdesigner}
-                alt="TouchDesigner project"
-                data-tooltip="Fun Project"
+                src={shopee}
+                alt="Shopee project"
+                data-tooltip="View Repository"
               />
             </a>
             <p className="projectsPg-text">
-              <span className="projectsPg-text-name">Point Cloud Touch </span>-
-              Interactive installation that transforms human movement into
-              dynamic visual experiences. Hand gestures create waves that
-              reshape projected images for art exhibitions.
+              <span className="projectsPg-text-name">Shopee </span>- This
+              project is a responsive HTML and CSS clone of the Shopee
+              e-commerce platform's user interface. It meticulously recreates
+              Shopee's visual design and layout, demonstrating strong frontend
+              development and responsive styling capabilities.
             </p>
           </div>
 
@@ -291,16 +296,17 @@ export function ProjectsPage() {
               projectLink="https://github.com/diepngo21/theband"
             />
             <p className="projectsPg-text">
-              <span className="projectsPg-text-name">The Band </span>-
-              Interactive installation that transforms human movement into
-              dynamic visual experiences. Hand gestures create waves that
-              reshape projected images for art exhibitions.
+              <span className="projectsPg-text-name">The Band </span>- This
+              project is a responsive band website built with HTML and CSS,
+              applying fundamental web design principles found in W3Schools
+              tutorials. It showcases a clean, adaptable layout that ensures
+              optimal viewing and navigation across all device sizes.
             </p>
           </div>
 
           <div className="projectsPg-description">
             <a
-              href="https://diepngo21.github.io/the-band-project/"
+              href="https://github.com/diepngo21/Weather"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
@@ -309,14 +315,15 @@ export function ProjectsPage() {
                 className="projectsPg-img"
                 src={weather}
                 alt="Weather project"
-                data-tooltip="View Code"
+                data-tooltip="View Repository"
               />
             </a>
             <p className="projectsPg-text">
-              <span className="projectsPg-text-name">Weather App </span>-
-              Interactive installation that transforms human movement into
-              dynamic visual experiences. Hand gestures create waves that
-              reshape projected images for art exhibitions.
+              <span className="projectsPg-text-name">Weather App </span>- This
+              project is a simple weather application that uses an API to
+              display the current temperature for your city. It provides quick,
+              real-time temperature updates to keep you informed about your
+              local weather conditions.
             </p>
           </div>
 
@@ -324,20 +331,23 @@ export function ProjectsPage() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              className="project-link no-cursor"
+              className="project-link"
+              href="https://github.com/diepngo21/Bankist"
             >
               <img
                 className="projectsPg-img"
-                src={fighting}
-                alt="Fighting Game project"
-                data-tooltip="No longer available"
+                src={bankist}
+                alt=" Bankist project"
+                data-tooltip="View Repository"
               />
             </a>
             <p className="projectsPg-text">
-              <span className="projectsPg-text-name">Fighting Game </span>-
-              Interactive installation that transforms human movement into
-              dynamic visual experiences. Hand gestures create waves that
-              reshape projected images for art exhibitions.
+              <span className="projectsPg-text-name">Bankist </span>- This
+              project is a simulated online banking application, "Bankist,"
+              built with JavaScript. It features core functionalities like
+              secure user login with ID and PIN, account transfers, requesting
+              loans, and closing accounts. Users can also sort their transaction
+              history and view their current balance.
             </p>
           </div>
         </div>

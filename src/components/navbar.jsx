@@ -12,12 +12,14 @@ export const Navbar = () => {
         </Link>
       </div>
       <div className="link">
+        <Link to="*" className="navbar-text navbar-option">
+          Home
+        </Link>
+
         <Link to="/projects" className="navbar-text navbar-option">
           Projects
         </Link>
-        <a href="#about-section" className="navbar-text navbar-option">
-          About
-        </a>
+
         <Link to="/contact" className="navbar-text navbar-option">
           Contact
         </Link>

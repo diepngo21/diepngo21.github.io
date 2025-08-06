@@ -2,6 +2,10 @@
   font-family: "Eczar", serif;
   color: var(--brown);
 }
+
+.projectsPg-header {
+  margin-bottom: 45px;
+}
 .projectsPg-container {
   background-color: #ffddbf;
   padding: 40px 112px;
@@ -219,20 +223,19 @@
 }
 
 
-/* Project Link Styles - Add this to your projectsPage.css */
 
 .project-link {
   display: inline-block;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 15px; /* Match your existing border-radius */
+  border-radius: 15px; 
   overflow: hidden;
-  width: 100%; /* Ensure full width like your images */
+  width: 100%; 
 }
 
 .project-link:hover {
-  transform: translateY(-3px) scale(1.01); /* Subtle effect to not interfere with carousel */
-  box-shadow: 0 8px 20px rgba(195, 138, 41, 0.2); /* Use your brown color theme */
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 8px 20px rgba(195, 138, 41, 0.2); 
 }
 
 .project-link::after {

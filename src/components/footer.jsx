@@ -15,9 +15,7 @@ export const Footer = () => {
           <nav className="footer-links">
             <Link to="*">Home</Link>
             <Link to="/projects">Projects</Link>
-            <Link to="*" href="#about-section">
-              About
-            </Link>
+            <Link to="/contact">Contact</Link>
           </nav>
         </div>
       </div>

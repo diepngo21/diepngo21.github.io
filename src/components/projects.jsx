@@ -1,6 +1,6 @@
 import "../style/components/projects.css";
 import forge from "../svg/forge_logo.png";
-import MediaFlow from "../svg/mediaflow.png";
+import netflix from "../svg/netflix.png";
 import mapty from "../svg/mapty.png";
 import Touchdesigner from "../svg/touchdesigner.mp4";
 import { useEffect } from "react";
@@ -91,7 +91,7 @@ export const Projects = () => {
         </div>
         <div className="projects">
           <div className="projects-text">
-            <p className="projects-header">MediaFlow</p>
+            <p className="projects-header">Netflix</p>
             <p className="projects-description">
               Developed a responsive front-end streaming service with
               JavaScript, HTML, and CSS. This project features dynamic content,
@@ -99,11 +99,8 @@ export const Projects = () => {
               integration.
             </p>
           </div>
-          <a
-            href="https://ad6eab02-8860-454d-ad70-62a9af410c0b-00-1pke5vk15cv3u.picard.replit.dev/"
-            target="_blank"
-          >
-            <img src={MediaFlow} data-tooltip="Email me to gain access" />
+          <a href="https://diepngo21.github.io/Netflix_V2/" target="_blank">
+            <img src={netflix} data-tooltip="View the project live" />
           </a>
         </div>
         <div className="projects">

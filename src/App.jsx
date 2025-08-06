@@ -1,4 +1,4 @@
-import { Footer, Navbar } from "./components";
+import { Footer, Navbar, ScrollToTop } from "./components";
 import {
   BrowserRouter as Router,
   Routes,
@@ -12,6 +12,7 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<MainPage />} />
