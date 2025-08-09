@@ -1,0 +1,154 @@
+.about-sec {
+  padding: 50px 100px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.about-header {
+  font-family: "Eczar", serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #403930;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.about-text {
+  font-size: 20px;
+  line-height: 150%;
+  color: #5a5a5a;
+  text-align: justify;
+}
+
+.about-description {
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.avatar {
+  width: 456px;
+  height: 481px;
+  object-fit: cover;
+}
+
+.avatar:hover {
+  transform: translateY(-10px);
+}
+
+@media screen and (max-width: 1024px) {
+  .about-sec {
+    padding: 40px 60px;
+  }
+
+  .about-container {
+    gap: 40px;
+  }
+
+  .about-header {
+    font-size: 2.2rem;
+  }
+
+  .about-text {
+    font-size: 18px;
+    line-height: 140%;
+  }
+
+  .about-description {
+    width: 55%;
+  }
+
+  .avatar {
+    width: 380px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-sec {
+    padding: 30px 20px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .about-header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    font-size: 17px;
+    line-height: 135%;
+    text-align: center;
+  }
+
+  .about-description {
+    width: 100%;
+    order: 2;
+  }
+
+  .avatar {
+    width: 320px;
+    height: 340px;
+    order: 1;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-sec {
+    padding: 25px 15px;
+  }
+
+  .about-container {
+    gap: 25px;
+  }
+
+  .about-header {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .about-text {
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  .avatar {
+    width: 280px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .about-sec {
+    padding: 20px 10px;
+  }
+
+  .about-header {
+    font-size: 1.6rem;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+
+  .avatar {
+    width: 240px;
+    height: 260px;
+  }
+}

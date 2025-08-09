@@ -5,3 +5,4 @@ export * from "./projects";
 export * from "./contact";
 export * from "./contactForm";
 export * from "./scrollToTop";
+export * from "./loadingScreen";

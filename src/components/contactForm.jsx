@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../style/components/contactForm.css";
 import avatar2 from "../svg/avatar2.png";
+import { data } from "../data";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +14,7 @@ const ContactForm = () => {
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [copyStatus, setCopyStatus] = useState("");
 
   const validateForm = () => {
     const newErrors = {};
@@ -47,13 +49,45 @@ const ContactForm = () => {
       [name]: value,
     }));
 
-    // Clear error when user starts typing
     if (errors[name]) {
       setErrors((prev) => ({
         ...prev,
         [name]: "",
       }));
     }
+  };
+
+  // Copy to clipboard function
+  const copyToClipboard = async (text) => {
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+      } else {
+        // Fallback for older browsers
+        const textArea = document.createElement("textarea");
+        textArea.value = text;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-999999px";
+        textArea.style.top = "-999999px";
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        document.execCommand("copy");
+        textArea.remove();
+      }
+
+      setCopyStatus("copied");
+      setTimeout(() => setCopyStatus(""), 2000);
+    } catch (err) {
+      console.error("Failed to copy email:", err);
+      setCopyStatus("error");
+      setTimeout(() => setCopyStatus(""), 2000);
+    }
+  };
+
+  const openLinkedIn = () => {
+    const linkedinUrl = data.linkedin;
+    window.open(linkedinUrl, "_blank", "noopener,noreferrer");
   };
 
   const handleSubmit = async (e) => {
@@ -68,7 +102,6 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      // Create form data for web3forms
       const formDataToSend = new FormData();
       formDataToSend.append(
         "access_key",
@@ -112,7 +145,6 @@ const ContactForm = () => {
 
   return (
     <div className="contact-page-container">
-      {/* Header Section */}
       <div className="contact-form-header">
         <h2 className="contact-form-title">Get In Touch</h2>
         <p className="contact-form-subtitle">
@@ -121,7 +153,6 @@ const ContactForm = () => {
         </p>
       </div>
 
-      {/* Success Message */}
       {submitted && (
         <div className="contact-form-success">
           <div className="contact-form-success-icon">✅</div>
@@ -229,7 +260,27 @@ const ContactForm = () => {
                 <span className="contact-icon">📧</span>
                 <div className="contact-details">
                   <span className="contact-label">Email</span>
-                  <span className="contact-value">diepngo0531@gmail.com</span>
+                  <span
+                    className={`contact-value copyable-email ${copyStatus}`}
+                    onClick={() => copyToClipboard(data.gmail)}
+                    title="Click to copy email"
+                    role="button"
+                    tabIndex={0}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        copyToClipboard(data.gmail);
+                      }
+                    }}
+                  >
+                    {data.gmail}
+                    {copyStatus === "copied" && (
+                      <span className="copy-feedback">✓ Copied!</span>
+                    )}
+                    {copyStatus === "error" && (
+                      <span className="copy-feedback error">✗ Failed</span>
+                    )}
+                  </span>
                 </div>
               </div>
 
@@ -237,8 +288,20 @@ const ContactForm = () => {
                 <span className="contact-icon">💼</span>
                 <div className="contact-details">
                   <span className="contact-label">LinkedIn</span>
-                  <span className="contact-value">
-                    https://www.linkedin.com/in/diepngo21/{" "}
+                  <span
+                    className="contact-value clickable-linkedin"
+                    onClick={openLinkedIn}
+                    title="Click to open LinkedIn profile"
+                    role="button"
+                    tabIndex={0}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        openLinkedIn();
+                      }
+                    }}
+                  >
+                    Diep Gia Lich Ngo
                   </span>
                 </div>
               </div>

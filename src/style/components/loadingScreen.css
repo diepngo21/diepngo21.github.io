@@ -1,0 +1,258 @@
+.loading-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffddbf 0%, #ffcc99 50%, #ffddbf 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-family: "Arial", sans-serif;
+}
+
+.bg-particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.particle {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: float 6s infinite ease-in-out;
+}
+
+.particle-1 {
+  width: 80px;
+  height: 80px;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.particle-2 {
+  width: 120px;
+  height: 120px;
+  left: 20%;
+  animation-delay: 1s;
+}
+
+.particle-3 {
+  width: 60px;
+  height: 60px;
+  left: 70%;
+  animation-delay: 2s;
+}
+
+.particle-4 {
+  width: 100px;
+  height: 100px;
+  left: 80%;
+  animation-delay: 3s;
+}
+
+.particle-5 {
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-20vh) rotate(180deg);
+    opacity: 0.7;
+  }
+}
+
+.loading-container {
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #8b4513;
+  margin-bottom: 2rem;
+  animation: logoGlow 2s ease-in-out infinite alternate;
+  text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.3);
+}
+
+@keyframes logoGlow {
+  from {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+.spinner-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 2rem;
+}
+
+.spinner {
+  width: 100%;
+  height: 100%;
+  border: 4px solid rgba(139, 69, 19, 0.2);
+  border-top: 4px solid #8b4513;
+  border-radius: 50%;
+  animation: spin 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+  position: relative;
+}
+
+.spinner::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2px solid transparent;
+  border-top: 2px solid rgba(139, 69, 19, 0.6);
+  border-radius: 50%;
+  animation: spin 2s linear infinite reverse;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.progress-container {
+  width: 300px;
+  height: 8px;
+  background: rgba(139, 69, 19, 0.2);
+  border-radius: 20px;
+  margin: 0 auto 1.5rem;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #8b4513 0%, #d2691e 50%, #8b4513 100%);
+  border-radius: 20px;
+  transition: width 0.1s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.loading-text {
+  color: #8b4513;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  animation: textPulse 1.5s ease-in-out infinite;
+}
+
+.loading-subtext {
+  color: rgba(139, 69, 19, 0.7);
+  font-size: 0.9rem;
+  animation: fadeInOut 2s ease-in-out infinite;
+  margin-bottom: 1rem;
+}
+
+.percentage {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #8b4513;
+}
+
+@keyframes textPulse {
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 2rem;
+  }
+  .progress-container {
+    width: 250px;
+  }
+  .spinner-container {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+  .progress-container {
+    width: 200px;
+  }
+  .spinner-container {
+    width: 80px;
+    height: 80px;
+  }
+}

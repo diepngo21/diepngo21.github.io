@@ -39,7 +39,7 @@ export const Main = () => {
 
               <a
                 className="intro-text-el contact-btn"
-                href="mailto:diepngo0531@gmail.com?&body=Message"
+                href={`mailto:${data.gmail}?&body=Message`}
                 style={{ textDecoration: "none" }}
               >
                 {" "}

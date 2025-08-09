@@ -1,63 +1,198 @@
 .main-section {
   margin-top: 40px;
-  .introduction {
-    font-family: "Eczar", serif;
-    width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    .intro-text {
-      line-height: 1.6;
-      display: flex;
-      flex-direction: column;
-      width: 75%;
-      color: var(--brown);
+  padding: 0 20px;
+}
 
-      .intro-text-el {
-        font-size: 24px;
-        line-height: 2;
-        color: var(--brown);
-      }
-    }
-    .name {
-      font-size: 3rem;
-      font-weight: bold;
-    }
-  }
+.introduction {
+  font-family: "Eczar", serif;
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 40px;
+}
+
+.intro-text {
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  color: var(--brown);
+}
+
+.intro-text-el {
+  font-size: 24px;
+  line-height: 2;
+  color: var(--brown);
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .info {
   margin-top: 15px;
-  padding: 3px 25px;
+  padding: 12px 25px;
   background-color: #4d5566;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   width: 45%;
+  min-width: 200px;
   align-items: center;
   cursor: pointer;
-  &:hover {
-    background-color: #353638;
-  }
-  .contact {
-    text-decoration: none;
-    color: white !important;
-  }
-  .info-icon {
-    color: white;
-    padding-top: 10px;
-    padding-left: 6px;
-  }
+  transition: background-color 0.3s ease;
+}
+
+.info:hover {
+  background-color: #353638;
+}
+
+.contact {
+  text-decoration: none;
+  color: white !important;
+  font-size: 18px;
+}
+
+.info-icon {
+  color: white;
+  padding-top: 10px;
+  padding-left: 6px;
+  font-size: 18px;
 }
 
 .img img {
   width: 300px;
   height: 403px;
   margin-left: 20px;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
 .contact-btn {
   display: flex;
+}
+
+/* Tablet Responsive */
+@media screen and (max-width: 1024px) {
+  .main-section {
+    margin-top: 30px;
+    padding: 0 30px;
+  }
+
+  .introduction {
+    max-width: 800px;
+    gap: 30px;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .intro-text-el {
+    font-size: 22px;
+  }
+
+  .img img {
+    width: 250px;
+    height: 335px;
+    margin-left: 15px;
+  }
+
+  .info {
+    width: 50%;
+    padding: 10px 20px;
+  }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .main-section {
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+
+  .introduction {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .intro-text {
+    width: 100%;
+    align-items: center;
+  }
+
+  .name {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .intro-text-el {
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  .img img {
+    width: 280px;
+    height: 375px;
+    margin: 0;
+  }
+
+  .info {
+    width: 60%;
+    max-width: 250px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .contact {
+    font-size: 16px;
+  }
+}
+
+/* Small Mobile Responsive */
+@media screen and (max-width: 480px) {
+  .main-section {
+    padding: 0 15px;
+  }
+
+  .introduction {
+    gap: 20px;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+
+  .intro-text-el {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .img img {
+    width: 240px;
+    height: 320px;
+  }
+
+  .info {
+    width: 70%;
+    max-width: 280px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+  }
+
+  .contact {
+    font-size: 15px;
+  }
+
+  .info-icon {
+    font-size: 16px;
+  }
 }

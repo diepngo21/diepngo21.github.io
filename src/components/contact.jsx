@@ -1,6 +1,5 @@
-import React from "react";
 import "../style/components/contact.css";
-import { BsDiscord } from "react-icons/bs";
+import { data } from "../data";
 
 export const Contact = () => {
   return (
@@ -22,7 +21,7 @@ export const Contact = () => {
               </svg>
             </div>
             <h3>Email</h3>
-            <a href="mailto:diepngo0531@gmail.com">diepngo0531@gmail.com</a>
+            <a href={`mailto:${data.gmail}`}>{data.gmail}</a>{" "}
           </div>
 
           <div className="contact-card">
@@ -33,7 +32,7 @@ export const Contact = () => {
             </div>
             <h3>Discord</h3>
             <a
-              href="https://discord.com/users/670472609649000451"
+              href={`${data.discord}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -49,7 +48,7 @@ export const Contact = () => {
             </div>
             <h3>LinkedIn</h3>
             <a
-              href="https://www.linkedin.com/in/diepngo21/"
+              href={`${data.linkedin}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -74,7 +73,7 @@ export const Contact = () => {
             </p>
 
             <div className="cta-buttons">
-              <a href="mailto:diepngo0531@gmail.com" className="btn-primary">
+              <a href={`mailto:${data.gmail}`} className="btn-primary">
                 Send Email
               </a>
             </div>

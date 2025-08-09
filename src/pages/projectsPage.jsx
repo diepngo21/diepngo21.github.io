@@ -95,7 +95,6 @@ const ImageCarousel = ({ images, projectName, projectLink }) => {
         ))}
       </div>
 
-      {/* Image counter */}
       <div className="carousel-counter">
         {currentIndex + 1} / {images.length}
       </div>

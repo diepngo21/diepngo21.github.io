@@ -1,7 +1,6 @@
 import React from "react";
-import "../style/pages/about.css";
+import "../style/components/about.css";
 import avatar2 from "../svg/avatar2.png";
-import { BsDiscord, BsGithub, BsLinkedin } from "react-icons/bs";
 
 export const About = React.forwardRef((props, ref) => {
   return (
