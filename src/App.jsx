@@ -1,10 +1,5 @@
 import { Footer, Navbar, ScrollToTop } from "./components";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { MainPage, ContactPage, ProjectsPage } from "./pages";
 import React, { useState, useEffect } from "react";
 import LoadingScreen from "./components/loadingScreen";
@@ -26,7 +21,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <BrowserRouter basename="/diep-portfolio">
         <ScrollToTop />
         <Navbar />
         <Routes>
@@ -36,7 +31,7 @@ function App() {
           <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
         <Footer />
-      </Router>
+      </BrowserRouter>
     </>
   );
 }
