@@ -13,7 +13,6 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Set loading duration to 2.5 seconds
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 2500);
@@ -21,12 +20,10 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Show loading screen for 2.5 seconds
   if (isLoading) {
     return <LoadingScreen />;
   }
 
-  // Show main app after loading
   return (
     <>
       <Router>
