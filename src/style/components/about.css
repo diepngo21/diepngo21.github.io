@@ -42,10 +42,6 @@
   object-fit: cover;
 }
 
-.avatar:hover {
-  transform: translateY(-10px);
-}
-
 @media screen and (max-width: 1024px) {
   .about-sec {
     padding: 40px 60px;
