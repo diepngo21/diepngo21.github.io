@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter basename="/diep-portfolio">
+      <BrowserRouter>
         <ScrollToTop />
         <Navbar />
         <Routes>
