@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../style/components/contactForm.css";
-import avatar2 from "../svg/avatar2.png";
+import avatar from "../svg/avatar.jpeg";
 import { data } from "../data";
 
 const ContactForm = () => {
@@ -247,7 +247,7 @@ const ContactForm = () => {
 
         <div className="contact-profile-section">
           <div className="contact-profile-picture">
-            <img src={avatar2} alt="Profile" className="profile-image" />
+            <img src={avatar} alt="Profile" className="profile-image" />
             <div className="profile-overlay">
               <p className="profile-text">Ready to collaborate?</p>
             </div>

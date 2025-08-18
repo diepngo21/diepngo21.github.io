@@ -22,9 +22,9 @@ export const Main = () => {
             <ul className="intro-text">
               <div className="typewriter name">
                 <Typewriter
-                  loop={2}
+                  loop={5}
                   cursor
-                  typeSpeed={140}
+                  typeSpeed={100}
                   cursorStyle="_"
                   words={["Hello, My name is Diep"]}
                 />

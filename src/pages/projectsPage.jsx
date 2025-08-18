@@ -15,6 +15,7 @@ import theband2 from "../svg/theband2.png";
 import theband3 from "../svg/theband3.png";
 import marketSystem1 from "../svg/marketsystem1.png";
 import marketSystem2 from "../svg/marketsystem2.png";
+import marketSystem3 from "../svg/marketsystem3.png";
 
 import { Contact } from "../components";
 
@@ -38,7 +39,6 @@ const ImageCarousel = ({ images, projectName, projectLink }) => {
   };
 
   const handleCarouselClick = (e) => {
-    // Only trigger link if not clicking on navigation elements
     if (
       !e.target.closest(".carousel-btn") &&
       !e.target.closest(".carousel-dots")
@@ -104,7 +104,12 @@ const ImageCarousel = ({ images, projectName, projectLink }) => {
 
 export function ProjectsPage() {
   const TheBandImages = [theband, theband1, theband2, theband3];
-  const MarketSystemImages = [marketSystem, marketSystem1, marketSystem2];
+  const MarketSystemImages = [
+    marketSystem,
+    marketSystem1,
+    marketSystem2,
+    marketSystem3,
+  ];
 
   useEffect(() => {
     const tooltip = document.createElement("div");
@@ -207,7 +212,7 @@ export function ProjectsPage() {
 
           <div className="projectsPg-description">
             <a
-              href="https://github.com/diepngo21/Netflix_V2"
+              href="https://diepngo21.github.io/Netflix_V2/"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
@@ -270,13 +275,13 @@ export function ProjectsPage() {
               target="_blank"
               rel="noopener noreferrer"
               className="project-link "
-              href="https://github.com/diepngo21/shopee-project"
+              href="https://diepngo21.github.io/shopee-project/"
             >
               <img
                 className="projectsPg-img"
                 src={shopee}
                 alt="Shopee project"
-                data-tooltip="View Repository"
+                data-tooltip="View the project live"
               />
             </a>
             <p className="projectsPg-text">
@@ -305,7 +310,7 @@ export function ProjectsPage() {
 
           <div className="projectsPg-description">
             <a
-              href="https://github.com/diepngo21/Weather"
+              href="https://diepngo21.github.io/Weather/"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
@@ -314,7 +319,7 @@ export function ProjectsPage() {
                 className="projectsPg-img"
                 src={weather}
                 alt="Weather project"
-                data-tooltip="View Repository"
+                data-tooltip="View the project live"
               />
             </a>
             <p className="projectsPg-text">
