@@ -2,6 +2,7 @@ import { Footer, Navbar, ScrollToTop } from "./components";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { MainPage, ContactPage, ProjectsPage } from "./pages";
 import React, { useState, useEffect } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import LoadingScreen from "./components/loadingScreen";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
+          <SpeedInsights />
         </Routes>
         <Footer />
       </BrowserRouter>
