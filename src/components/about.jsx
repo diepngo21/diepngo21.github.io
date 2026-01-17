@@ -11,14 +11,12 @@ export const About = React.forwardRef((props, ref) => {
         <div className="about-description ">
           <h1 className="about-header">A Little Bit About Me</h1>
           <p className="about-text">
-            My full name is Diep Gia Lich Ngo, and you can call me Diep. I
-            immigrated with my family from Vietnam to California at the age of
-            12.
-            <br></br>I'm currently a university student and also work as a
-            student assistant. I love turning ideas into reality through clean,
-            efficient code. When I'm not coding, you'll find me exploring new
-            technologies, contributing to open source projects, or enjoying
-            strategy games like Teamfight Tactics, HSR, etc. I believe in
+            My full name is Diep Gia Lich Ngo, and you can call me Diep. I'm
+            currently a university student and also work as a student assistant.
+            I love turning ideas into reality through clean, efficient code.
+            When I'm not coding, you'll find me exploring new technologies,
+            contributing to open source projects, or enjoying strategy games
+            like Teamfight Tactics, Honkai Star Rail, etc. I believe in
             continuous learning and staying up-to-date with the latest industry
             trends.
           </p>
