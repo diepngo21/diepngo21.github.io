@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import "../style/components/footer.css";
 
 export const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="footer-sec">
       <div className="footer-content">
         <div className="footer-section footer-copyright">
-          <p>©2025. All rights reserved.</p>
+          <p>©{currentYear}. All rights reserved.</p>
           <p>Made with ❤️ by Diep Ngo </p>
         </div>
 

@@ -33,8 +33,8 @@ export const Main = () => {
                 {data.job}
               </p>
               <p className="intro-text-el" id="about">
-                A dedicated software engineer with a passion for developing
-                website, and AI.
+                A dedicated software engineer with a passion for web development
+                and AI.
               </p>
 
               <a

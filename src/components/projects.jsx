@@ -92,7 +92,7 @@ export const Projects = () => {
         </div>
         <div className="projects">
           <div className="projects-text">
-            <p className="projects-header">Netflix</p>
+            <p className="projects-header">Netflix Clone</p>
             <p className="projects-description">
               Developed a responsive front-end streaming service with
               JavaScript, HTML, and CSS. This project features dynamic content,
@@ -114,9 +114,9 @@ export const Projects = () => {
             <p className="projects-description">
               Mapty is a web app that helps you track and map your running and
               cycling workouts. It uses your location to display activities on
-              an interactive map. You can log new workouts with details like
-              distance and duration, which are then shown on the map and in a
-              list.
+              an interactive map. Built using JavaScript and the Leaflet API to
+              handle geolocation and map rendering, with LocalStorage to persist
+              workout data.
             </p>
           </div>
           <a
@@ -139,17 +139,12 @@ export const Projects = () => {
             <div className="projects-text co-projects-text">
               <p className="projects-header">Market Management System</p>
               <p className="projects-description">
-                Admin Dashboard is a platform for managing employees, product
-                and payslips for employees. It is divided into two parts. The
-                first part is for users with admin, manager or superviosr roles
-                to add employees and add new products or update existing
-                products. The next part is for users such as Cashier, Grocery,
-                Meat and Produce positions, in this part, employees can only
-                update user informationm see if there are new products. In
-                addition, employees can check payslips on this platform. This is
-                a platform where only emplotees can post and recceive without
-                admin permission. It is user-friendly and is still being
-                improved and refined.
+                An Admin Dashboard for managing employees, products, and
+                payslips. It features role-based access control: Admins and
+                Managers can add employees and update inventory, while Cashiers
+                and Staff (Grocery, Meat, Produce) are restricted to viewing
+                information and checking payslips. This platform ensures secure
+                data handling and efficient workflow management."
               </p>
             </div>
           </div>
@@ -165,7 +160,7 @@ export const Projects = () => {
                 their order cart. My work encompassed the entire user interface
                 implementation, ensuring responsive design and intuitive
                 navigation, by translating design mockups into functional code
-                using React, HTML, CSS, etc...
+                using React, HTML, CSS, Figma, and JavaScript.
               </p>
             </div>
           </div>

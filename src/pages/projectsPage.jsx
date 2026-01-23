@@ -24,13 +24,13 @@ const ImageCarousel = ({ images, projectName, projectLink }) => {
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1,
     );
   };
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1,
     );
   };
 
@@ -174,7 +174,7 @@ export function ProjectsPage() {
   return (
     <div className="projectsPg-section">
       <div className="projectsPg-header-section">
-        <h1>Website and AI Projects</h1>
+        <h1>Web Development & AI Portfolio</h1>
         <p>
           As a skilled developer, I create high-quality websites, integrating
           intelligent AI features to deliver both stunning visuals and powerful
@@ -225,7 +225,7 @@ export function ProjectsPage() {
               />
             </a>
             <p className="projectsPg-text">
-              <span className="projectsPg-text-name">Netflix </span>- A
+              <span className="projectsPg-text-name">Netflix Clone </span>- A
               responsive front-end streaming service with JavaScript, HTML, and
               CSS. Features dynamic content and demonstrates strong proficiency
               in DOM manipulation and API integration.
@@ -264,9 +264,10 @@ export function ProjectsPage() {
               <span className="projectsPg-text-name">
                 Market Management System{" "}
               </span>
-              - Admin dashboard platform for managing employees, products and
-              payslips. Features role-based access control and user-friendly
-              interface for different employee positions.
+              - A comprehensive admin platform for managing employees,
+              inventory, and payroll. Features secure role-based access control
+              (RBAC) to differentiate between Admin, Manager, and Staff
+              permissions.
             </p>
           </div>
 
@@ -285,7 +286,7 @@ export function ProjectsPage() {
               />
             </a>
             <p className="projectsPg-text">
-              <span className="projectsPg-text-name">Shopee </span>- This
+              <span className="projectsPg-text-name">Shopee Clone </span>- This
               project is a responsive HTML and CSS clone of the Shopee
               e-commerce platform's user interface. It meticulously recreates
               Shopee's visual design and layout, demonstrating strong frontend

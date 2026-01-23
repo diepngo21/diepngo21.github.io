@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Main } from ".";
-import { About, Projects } from "../components";
+import { About, Projects, WorkExperience } from "../components";
 
 export const MainPage = () => {
   return (
@@ -13,6 +13,7 @@ export const MainPage = () => {
       </section>
       <section className="section about-page-section">
         <About />
+        <WorkExperience />
       </section>
     </>
   );

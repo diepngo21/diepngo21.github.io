@@ -41,6 +41,25 @@
   height: 481px;
   object-fit: cover;
 }
+.about-skills-header {
+  font-family: "Eczar", serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #403930;
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+
+.about-skills-list {
+  font-size: 30px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
 
 @media screen and (max-width: 1024px) {
   .about-sec {
@@ -147,4 +166,74 @@
     width: 240px;
     height: 260px;
   }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.about-skills-item {
+  position: relative;
+}
+
+.about-skills-icon {
+  cursor: pointer;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+  color: #403930;
+}
+
+.about-skills-item:hover .about-skills-icon {
+  transform: scale(0.85);
+}
+
+.skill-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  background-color: #403930;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  z-index: 10;
+}
+
+.skill-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #403930;
+}
+
+.about-skills-item:hover .skill-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-20px);
 }

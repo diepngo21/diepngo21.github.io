@@ -57,13 +57,11 @@ const ContactForm = () => {
     }
   };
 
-  // Copy to clipboard function
   const copyToClipboard = async (text) => {
     try {
       if (navigator.clipboard && window.isSecureContext) {
         await navigator.clipboard.writeText(text);
       } else {
-        // Fallback for older browsers
         const textArea = document.createElement("textarea");
         textArea.value = text;
         textArea.style.position = "fixed";
@@ -105,7 +103,7 @@ const ContactForm = () => {
       const formDataToSend = new FormData();
       formDataToSend.append(
         "access_key",
-        "3c2f4024-69c2-437f-a975-5f417172201c"
+        "3c2f4024-69c2-437f-a975-5f417172201c",
       );
       formDataToSend.append("name", formData.name);
       formDataToSend.append("email", formData.email);

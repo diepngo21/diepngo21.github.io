@@ -1,0 +1,108 @@
+#custom-timeline-wrapper {
+  --ctl-accent-color: var(--brown);
+  --ctl-text-color: var(--light-brown);
+  --ctl-card-bg: #ffffff;
+  --ctl-line-color: #332c25;
+}
+
+#custom-timeline-wrapper .timeline-container {
+  background-color: var(--ctl-bg-color);
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Arial", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#custom-timeline-wrapper .timeline-wrapper {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+#custom-timeline-wrapper .timeline-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+#custom-timeline-wrapper .column-title {
+  color: var(--ctl-accent-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#custom-timeline-wrapper .timeline-list {
+  position: relative;
+  padding-left: 20px;
+  border-left: 2px solid var(--ctl-line-color);
+}
+
+#custom-timeline-wrapper .timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+#custom-timeline-wrapper .timeline-dot {
+  position: absolute;
+  left: -29px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-color: var(--ctl-accent-color);
+  border-radius: 50%;
+  border: 4px solid var(--ctl-bg-color);
+  box-sizing: content-box; /* Fixes sizing issues in some frameworks */
+}
+
+#custom-timeline-wrapper .timeline-card {
+  background-color: var(--ctl-card-bg);
+  padding: 25px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+#custom-timeline-wrapper .timeline-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(194, 65, 12, 0.2);
+}
+
+#custom-timeline-wrapper .timeline-year {
+  display: inline-block;
+  color: var(--ctl-accent-color);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+#custom-timeline-wrapper .timeline-heading {
+  color: #1f2937;
+  margin: 0 0 15px 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+#custom-timeline-wrapper .timeline-text {
+  color: var(--ctl-text-color);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #custom-timeline-wrapper .timeline-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
