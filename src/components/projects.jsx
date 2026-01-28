@@ -184,7 +184,7 @@ export const Projects = () => {
               Your browser does not support the video tag.
             </video>{" "}
           </div>
-          <div className="project-more-btn">
+          <div className="custom-btn btn-4">
             <Link to="/projects">More Projects</Link>
           </div>
         </div>

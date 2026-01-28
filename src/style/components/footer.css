@@ -1,12 +1,11 @@
 .footer-sec {
-  color: black;
-  display: flex;
-  text-align: center;
-  justify-content: center;
   font-family: "Work Sans", sans-serif;
   line-height: 25px;
   margin-top: 100px;
   padding: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .footer-content {
@@ -26,6 +25,26 @@
   margin: 5px 0;
 }
 
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heart-beat {
+  display: inline-block;
+  animation: heartbeat 1.5s infinite ease-in-out;
+}
+
 .footer-links {
   display: flex;
   padding: 5px 0;
@@ -38,12 +57,30 @@
 .footer-links a {
   text-decoration: none;
   font-size: 1.2rem;
-  color: black;
+  color: #403930;
+  position: relative;
+  padding-bottom: 2px;
   transition: color 0.3s ease;
 }
 
+/* The Sliding Underline Effect */
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #403930;
+  transition: width 0.3s ease-in-out;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
 .footer-links a:hover {
-  color: rgb(129, 118, 118);
+  opacity: 0.7;
 }
 
 /* Tablet styles */
