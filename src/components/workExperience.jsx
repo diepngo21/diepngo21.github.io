@@ -21,12 +21,6 @@ const educationData = [
 const experienceData = [
   {
     id: 1,
-    years: "2026 - Present",
-    title: "Engineer Department Assistant",
-    description:
-"Assisting engineering professors with lab setup, equipment maintenance, and student support in engineering courses. Responsibilities include preparing materials, troubleshooting technical issues, and ensuring a safe learning environment. Help run the Chabot Forge, where students can go to do their projects outside of class time and use equipment like 3D printers, soldering, laser cutters, etc."  },
-  {
-    id: 2,
     years: " 2023 - 2025",
     title: "Lab Technician Assistant",
     description:
