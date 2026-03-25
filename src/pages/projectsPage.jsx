@@ -17,7 +17,7 @@ import marketSystem1 from "../svg/marketsystem1.png";
 import marketSystem2 from "../svg/marketsystem2.png";
 import marketSystem3 from "../svg/marketsystem3.png";
 
-import { Contact } from "../components";
+import { Link } from "react-router-dom";
 
 const ImageCarousel = ({ images, projectName, projectLink }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -357,7 +357,12 @@ export function ProjectsPage() {
           </div>
         </div>
       </div>
-      <Contact />
+      <div className="projectsPg-cta-strip">
+        <p>Interested in working together?</p>
+        <Link to="/contact" className="projectsPg-cta-btn">
+          Get in touch
+        </Link>
+      </div>
     </div>
   );
 }

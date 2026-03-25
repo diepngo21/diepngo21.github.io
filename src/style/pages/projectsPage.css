@@ -204,7 +204,9 @@
 .project-link {
   display: block;
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border-radius: 15px;
   overflow: hidden;
   width: 100%;
@@ -240,7 +242,9 @@
 /* Clickable Carousel */
 .clickable-carousel {
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .clickable-carousel:hover {
@@ -302,6 +306,43 @@
   object-position: right !important;
 }
 
+.projectsPg-cta-strip {
+  background-color: #ffeed9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 60px 112px;
+  font-family: "Eczar", serif;
+}
+
+.projectsPg-cta-strip p {
+  color: var(--brown);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.projectsPg-cta-btn {
+  background-color: #594f43;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 20px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.projectsPg-cta-btn:hover {
+  background-color: #403930;
+  color: #fff;
+}
+
 /* RESPONSIVE STYLES */
 
 /* Large Desktop (1200px+) */
@@ -317,6 +358,10 @@
   .projectsPg-projects {
     grid-column-gap: 60px;
     grid-row-gap: 60px;
+  }
+
+  .projectsPg-cta-strip {
+    padding: 70px 150px;
   }
 }
 
@@ -362,6 +407,16 @@
 
 /* Tablet (768px and below) - Single Column Layout */
 @media (max-width: 768px) {
+  .projectsPg-cta-strip {
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .projectsPg-cta-strip p {
+    font-size: 1.5rem;
+  }
   .projectsPg-header-section {
     padding: 50px 20px;
   }
@@ -420,6 +475,13 @@
 
 /* Mobile Large (576px-767px) */
 @media (max-width: 576px) {
+  .projectsPg-cta-strip {
+    padding: 40px 15px;
+  }
+
+  .projectsPg-cta-strip p {
+    font-size: 1.3rem;
+  }
   .projectsPg-header-section {
     padding: 40px 15px;
   }

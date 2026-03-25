@@ -21,8 +21,22 @@ const educationData = [
 const experienceData = [
   {
     id: 1,
-    years: " 2023 - 2025",
-    title: "Lab Technician Assistant",
+    years: " Feb 2026 - Present",
+    title: "Engineer Department Assistant - Chabot College",
+    description:
+      "I support daily lab operations and faculty needs by organizing technical resources, maintaining equipment, and ensuring a smooth, efficient workspace for engineering students. Handled equipment setup, inventory tracking, budget oversight, and procurement for faculty and students. Ensured smooth lab operations and safety compliance.",
+  },
+  {
+    id: 2,
+    years: " Jan 2026 - Present",
+    title: "AI Trainer - AI Handshake",
+    description:
+      "I evaluated machine learning outputs and provided strict quality control on specific client projects to help improve the overall accuracy and performance of AI models.",
+  },
+  {
+    id: 3,
+    years: " Aug 2023 - Jan 2026",
+    title: "Lab Technician Assistant - Chabot College",
     description:
       "Managed lab logistics for Physics, Engineering, and Geology departments. Handled equipment setup, inventory tracking, budget oversight, and procurement for faculty and students. Ensured smooth lab operations and safety compliance.",
   },

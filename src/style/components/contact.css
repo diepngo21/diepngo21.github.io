@@ -109,7 +109,6 @@
   backdrop-filter: blur(4px);
   border-radius: 1.5rem;
   padding: 3rem;
-
   border: 1px solid var(--brown);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   text-align: center;

@@ -134,37 +134,6 @@ export const Projects = () => {
       </div>
       <div className="project-header">Collaborative / Fun Projects</div>
       <div className="co-fun-projecs-container">
-        <div className="co-projects">
-          <div className="projects">
-            <div className="projects-text co-projects-text">
-              <p className="projects-header">Market Management System</p>
-              <p className="projects-description">
-                An Admin Dashboard for managing employees, products, and
-                payslips. It features role-based access control: Admins and
-                Managers can add employees and update inventory, while Cashiers
-                and Staff (Grocery, Meat, Produce) are restricted to viewing
-                information and checking payslips. This platform ensures secure
-                data handling and efficient workflow management."
-              </p>
-            </div>
-          </div>
-          <div className="projects">
-            <div className="projects-text co-projects-text">
-              <p className="projects-header">Co Chau Kitchen</p>
-              <p className="projects-description">
-                I was responsible for the front-end development of a dynamic
-                restaurant website, designed to enhance the customer's online
-                ordering experience. This involved creating a visually appealing
-                and highly interactive menu system where users can browse dishes
-                by category, view item details, and seamlessly add items to
-                their order cart. My work encompassed the entire user interface
-                implementation, ensuring responsive design and intuitive
-                navigation, by translating design mockups into functional code
-                using React, HTML, CSS, Figma, and JavaScript.
-              </p>
-            </div>
-          </div>
-        </div>
         <div className="fun-projects">
           <div className="projects">
             <div className="projects-text co-projects-text">
