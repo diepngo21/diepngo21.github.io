@@ -1,163 +1,82 @@
 import "../style/components/projects.css";
-import forge from "../svg/forge_logo.png";
-import netflix from "../svg/netflix.png";
-import mapty from "../svg/mapty.png";
-import Touchdesigner from "../svg/touchdesigner.mp4";
-import { useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+
+const projectsList = [
+  {
+    num: "01",
+    name: "Chabot Forge",
+    description: "Official makerspace website for Chabot College",
+    tech: "HTML · CSS · JavaScript",
+    href: "https://chabotforge.org/",
+    label: "Featured →",
+  },
+  {
+    num: "02",
+    name: "Market Management System",
+    description: "Admin platform with RBAC for employees, inventory & payroll",
+    tech: "JavaScript · RBAC · Admin UI",
+    href: "https://github.com/diepngo21",
+    label: "View →",
+  },
+  {
+    num: "03",
+    name: "Point Cloud Touch",
+    description: "Interactive AI art installation exhibited at ArtIS festival",
+    tech: "Computer Vision · AI · Interactive",
+    href: "https://github.com/diepngo21",
+    label: "View →",
+  },
+  {
+    num: "04",
+    name: "Mapty",
+    description: "Workout tracker with geolocation and interactive map logging",
+    tech: "Leaflet.js · Geolocation · LocalStorage",
+    href: "https://github.com/diepngo21/Mapty",
+    label: "View →",
+  },
+  {
+    num: "05",
+    name: "Bankist",
+    description: "Simulated banking app with transfers, loans & transaction history",
+    tech: "JavaScript · DOM · Finance UI",
+    href: "https://github.com/diepngo21",
+    label: "View →",
+  },
+  {
+    num: "06",
+    name: "Netflix Clone",
+    description: "Responsive streaming UI with dynamic content and API integration",
+    tech: "JavaScript · HTML/CSS · API",
+    href: "https://diepngo21.github.io/Netflix_V2/",
+    label: "View →",
+  },
+];
 
 export const Projects = () => {
-  useEffect(() => {
-    const tooltip = document.createElement("div");
-    tooltip.className = "cursor-tooltip";
-    tooltip.style.cssText = `
-      position: fixed;
-      background: rgba(0, 0, 0, 0.9);
-      font-family: "Eczar", serif;
-      color: white;
-      padding: 10px 14px;
-      border-radius: 6px;
-      font-size: 15px;
-      pointer-events: none;
-      z-index: 9999;
-      white-space: nowrap;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.2s ease;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    `;
-    document.body.appendChild(tooltip);
-
-    const handleMouseEnter = (e) => {
-      const tooltipText = e.target.getAttribute("data-tooltip");
-      if (tooltipText) {
-        tooltip.textContent = tooltipText;
-        tooltip.style.opacity = "1";
-        tooltip.style.visibility = "visible";
-      }
-    };
-
-    const handleMouseMove = (e) => {
-      const tooltipText = e.target.getAttribute("data-tooltip");
-      if (tooltipText) {
-        tooltip.style.left = e.clientX + 15 + "px";
-        tooltip.style.top = e.clientY - 10 + "px";
-      }
-    };
-
-    const handleMouseLeave = (e) => {
-      const tooltipText = e.target.getAttribute("data-tooltip");
-      if (tooltipText) {
-        tooltip.style.opacity = "0";
-        tooltip.style.visibility = "hidden";
-      }
-    };
-
-    document.addEventListener("mouseenter", handleMouseEnter, true);
-    document.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("mouseleave", handleMouseLeave, true);
-
-    return () => {
-      document.removeEventListener("mouseenter", handleMouseEnter, true);
-      document.removeEventListener("mousemove", handleMouseMove);
-      document.removeEventListener("mouseleave", handleMouseLeave, true);
-      if (tooltip.parentNode) {
-        tooltip.parentNode.removeChild(tooltip);
-      }
-    };
-  }, []);
-
   return (
-    <div className="project-section" id="projects-section">
-      <div className="project-header">My Solo Projects</div>
-      <div className="projects-container">
-        <div className="projects">
-          <div className="projects-text">
-            <p className="projects-header">Chabot Forge</p>
-            <p className="projects-description">
-              As part of my work at Chabot Forge, I designed and developed the
-              official front-end website for Chabot Forge, enhancing our digital
-              presence and creating an accessible online resource.
-            </p>
-          </div>
-          <a href="https://chabotforge.org/" target="_blank">
-            {" "}
-            <img
-              className="projects-img"
-              src={forge}
-              href="https://chabotforge.org/"
-              data-tooltip="Click to view Chabot Forge - Engineering Maker Lab"
-            />
-          </a>{" "}
-        </div>
-        <div className="projects">
-          <div className="projects-text">
-            <p className="projects-header">Netflix Clone</p>
-            <p className="projects-description">
-              Developed a responsive front-end streaming service with
-              JavaScript, HTML, and CSS. This project features dynamic content,
-              and demonstrates strong proficiency in DOM manipulation and API
-              integration.
-            </p>
-          </div>
-          <a href="https://diepngo21.github.io/Netflix_V2/" target="_blank">
-            <img
-              className="projects-img"
-              src={netflix}
-              data-tooltip="View the project live"
-            />
-          </a>
-        </div>
-        <div className="projects">
-          <div className="projects-text">
-            <p className="projects-header">Mapty</p>
-            <p className="projects-description">
-              Mapty is a web app that helps you track and map your running and
-              cycling workouts. It uses your location to display activities on
-              an interactive map. Built using JavaScript and the Leaflet API to
-              handle geolocation and map rendering, with LocalStorage to persist
-              workout data.
-            </p>
-          </div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/diepngo21/Mapty"
-          >
-            <img
-              className="projects-img"
-              src={mapty}
-              data-tooltip="View Repository"
-            />
-          </a>
-        </div>
-      </div>
-      <div className="project-header">Collaborative / Fun Projects</div>
-      <div className="co-fun-projecs-container">
-        <div className="fun-projects">
-          <div className="projects">
-            <div className="projects-text co-projects-text">
-              <p className="projects-header">Point Cloud Touch</p>
-              <p className="projects-description">
-                I had the opportunity to work with my professor on a captivating
-                interactive project: "Point Cloud Touch." This installation
-                transformed human movement into a dynamic visual experience,
-                where hand gestures captured by a camera would create a wave
-                that dramatically reshaped a projected image. Our goal was to
-                develop an engaging piece for a collaborative exhibition with
-                the ABG art group at a creative innovation festival.
-              </p>
+    <section className="projects-section" id="projects-section">
+      <div className="projects-inner">
+        <p className="section-label">SELECTED WORK</p>
+        <div className="section-divider"></div>
+
+        {projectsList.map((project) => (
+          <div key={project.num} className="project-row">
+            <span className="project-num">{project.num}</span>
+            <div className="project-info">
+              <p className="project-name">{project.name}</p>
+              <p className="project-desc">{project.description}</p>
+              <p className="project-tech">{project.tech}</p>
             </div>
-            <video controls className="projects-video">
-              <source src={Touchdesigner} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>{" "}
+            <a
+              href={project.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="proj-link"
+            >
+              {project.label}
+            </a>
           </div>
-          <div className="custom-btn btn-4">
-            <Link to="/projects">More Projects</Link>
-          </div>
-        </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };

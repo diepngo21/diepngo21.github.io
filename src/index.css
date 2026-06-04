@@ -1,19 +1,58 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Eczar:wght@400..800&display=swap");
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
-  box-sizing: border-box;
-  background-color: #ffeed9;
-  background-size: cover;
-  background-position: center;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #1c1c1c;
+  background-color: #f9f7f4;
 }
 
 :root {
+  --ivory: #f9f7f4;
+  --dark: #1c1c1c;
+  --gold: #c8a882;
+  --gold-dark: #a08862;
+  --muted: #b0a898;
+  --divider: #d8d2c8;
+  --body-text: #555555;
+  --light-text: #666666;
+  --max-width: 1100px;
+  --side-pad: 48px;
+  /* legacy aliases used by projects/contact pages */
   --brown: #403930;
   --light-brown: #594f43;
+}
+
+.section-label {
+  font-family: Georgia, serif;
+  font-size: 9px;
+  letter-spacing: 6px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.section-divider {
+  height: 0.5px;
+  background: var(--divider);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --side-pad: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --side-pad: 20px;
+  }
 }

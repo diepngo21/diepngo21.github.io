@@ -1,62 +1,56 @@
 import React from "react";
 import "../style/components/about.css";
-import avatar2 from "../svg/avatar2.png";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaReact } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
-import { FaGit } from "react-icons/fa";
-import { CgCPlusPlus } from "react-icons/cg";
-import { TbApi } from "react-icons/tb";
-
-const skills = [
-  { icon: IoLogoJavascript, name: "JavaScript" },
-  { icon: FaReact, name: "React" },
-  { icon: FaHtml5, name: "HTML5" },
-  { icon: FaCss3Alt, name: "CSS3" },
-  { icon: FaNodeJs, name: "Node.js" },
-  { icon: FaPython, name: "Python" },
-  { icon: FaGit, name: "Git" },
-  { icon: TbApi, name: "REST API" },
-  { icon: CgCPlusPlus, name: "C++" },
-];
 
 export const About = React.forwardRef((props, ref) => {
   return (
-    <div className="about-sec" id="about-section" ref={ref}>
-      {" "}
-      <div className="about-container">
-        <img src={avatar2} className="avatar" />
-        <div className="about-description ">
-          <h1 className="about-header">A Little Bit About Me</h1>
-          <p className="about-text">
-            My full name is Diep Gia Lich Ngo, and you can call me Diep. I'm
-            currently a university student and an Engineer Department
-            Assistance. I love turning ideas into reality through clean,
-            efficient code. When I'm not coding, you'll find me exploring new
-            technologies, contributing to open source projects, or enjoying
-            strategy games like Teamfight Tactics, Honkai Star Rail, etc. I
-            believe in continuous learning and staying up-to-date with the
-            latest industry trends.
-          </p>
-          <div className="about-skills-section">
-            <h2 className="about-skills-header"> Skills & Technologies</h2>
-            <ul className="about-skills-list">
-              {skills.map((skill, index) => {
-                const IconComponent = skill.icon;
-                return (
-                  <li key={index} className="about-skills-item">
-                    <IconComponent className="about-skills-icon" />
-                    <span className="skill-tooltip">{skill.name}</span>
-                  </li>
-                );
-              })}
-            </ul>
+    <section className="about-section" id="about-section" ref={ref}>
+      <div className="about-inner">
+        <p className="section-label">ABOUT</p>
+        <div className="section-divider"></div>
+
+        <div className="about-headline">
+          <h2 className="about-h2">Building the web,</h2>
+          <h2 className="about-h2 about-h2-italic">one project at a time.</h2>
+        </div>
+
+        <div className="about-rule"></div>
+
+        <div className="about-columns">
+          <div className="about-bio">
+            <p>
+              My full name is Diep Gia Lich Ngo. I'm a university student and
+              Software Engineer with a passion for web development and AI. I
+              believe in continuous learning and staying current with the
+              industry.
+            </p>
+            <p>
+              When I'm not coding, you'll find me exploring new technologies,
+              contributing to open source, or playing strategy games like
+              Teamfight Tactics.
+            </p>
+          </div>
+
+          <div className="about-skills-panel">
+            <p className="skills-panel-label">SKILLS</p>
+            <div className="skills-panel-divider"></div>
+            <div className="skills-grid">
+              <ul>
+                <li>JavaScript</li>
+                <li>HTML &amp; CSS</li>
+                <li>Python</li>
+                <li>React</li>
+                <li>Git &amp; GitHub</li>
+                <li>API Integration</li>
+              </ul>
+              <ul>
+                <li>AI Integration</li>
+                <li>Responsive Design</li>
+                <li>DOM Manipulation</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 });
