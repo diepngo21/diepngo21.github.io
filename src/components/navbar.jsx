@@ -45,13 +45,6 @@ export const Navbar = () => {
             Work
           </Link>
           <Link
-            to="/projects"
-            className={`navbar-text navbar-option ${isActive("/projects") ? "active" : ""}`}
-            onClick={handleLinkClick}
-          >
-            Projects
-          </Link>
-          <Link
             to="/contact"
             className={`navbar-text navbar-option ${isActive("/contact") ? "active" : ""}`}
             onClick={handleLinkClick}

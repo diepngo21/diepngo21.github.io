@@ -31,7 +31,7 @@
 
 .hero-role {
   font-family: Georgia, serif;
-  font-size: 15px;
+  font-size: 17px;
   font-style: italic;
   color: var(--muted);
   margin-bottom: 24px;
@@ -142,7 +142,7 @@
 
 .stack-label {
   font-family: Georgia, serif;
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 4px;
   color: var(--muted);
   margin-bottom: 8px;
@@ -157,7 +157,7 @@
 .stack-list {
   list-style: none;
   font-family: Georgia, serif;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--dark);
   line-height: 2.1;
 }
@@ -190,7 +190,7 @@
 
 .stat-label {
   font-family: Georgia, serif;
-  font-size: 10px;
+  font-size: 12px;
   font-style: italic;
   color: var(--muted);
 }

@@ -27,10 +27,17 @@ const experienceData = [
 
 const educationData = [
   {
-    date: "2023 – Present",
+    date: "2026 – Present",
+    title: "BS in Computer Science",
+    company: "UC Berkeley",
+    description: "Transferred from Chabot College.",
+  },
+  {
+    date: "2023 – 2026",
     title: "AS in Software Engineering (Transfer)",
     company: "Chabot College",
-    description: "Data Structures, Discrete Math, Physics.",
+    description:
+      "Completed transfer requirements. Data Structures, Discrete Math, Physics.",
   },
   {
     date: "2019 – 2023",

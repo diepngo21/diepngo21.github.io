@@ -36,7 +36,7 @@
 
 .contact-link {
   font-family: Georgia, serif;
-  font-size: 13px;
+  font-size: 15px;
   color: var(--light-text);
   text-decoration: none;
   transition: color 0.2s ease;

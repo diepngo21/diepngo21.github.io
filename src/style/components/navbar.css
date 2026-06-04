@@ -18,7 +18,7 @@
 
 .navbar-brand .navbar-text.home {
   font-family: Georgia, serif;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 6px;
   color: var(--dark);
   text-decoration: none;
@@ -33,7 +33,7 @@
 
 .navbar-text.navbar-option {
   font-family: Georgia, serif;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 3px;
   color: var(--muted);
   text-decoration: none;

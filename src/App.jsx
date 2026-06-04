@@ -1,6 +1,6 @@
 import { Footer, Navbar, ScrollToTop } from "./components";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { MainPage, ContactPage, ProjectsPage } from "./pages";
+import { MainPage, ContactPage } from "./pages";
 import React, { useState, useEffect } from "react";
 import LoadingScreen from "./components/loadingScreen";
 
@@ -26,9 +26,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Footer />
       </BrowserRouter>

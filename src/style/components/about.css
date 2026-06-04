@@ -42,7 +42,7 @@
 
 .about-bio p {
   font-family: Georgia, serif;
-  font-size: 13px;
+  font-size: 15px;
   color: var(--body-text);
   line-height: 1.85;
   margin-bottom: 18px;
@@ -55,7 +55,7 @@
 /* Skills panel */
 .skills-panel-label {
   font-family: Georgia, serif;
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 4px;
   color: var(--muted);
   margin-bottom: 8px;
@@ -79,7 +79,7 @@
 
 .skills-grid li {
   font-family: Georgia, serif;
-  font-size: 13px;
+  font-size: 15px;
   color: var(--dark);
   line-height: 2;
 }

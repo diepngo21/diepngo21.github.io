@@ -19,7 +19,7 @@
 
 .exp-date {
   font-family: Georgia, serif;
-  font-size: 9px;
+  font-size: 11px;
   color: var(--gold);
   letter-spacing: 2px;
   margin-bottom: 10px;
@@ -27,7 +27,7 @@
 
 .exp-title {
   font-family: Georgia, serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   color: var(--dark);
   margin-bottom: 4px;
@@ -35,15 +35,15 @@
 
 .exp-company {
   font-family: Georgia, serif;
-  font-size: 13px;
+  font-size: 15px;
   font-style: italic;
-  color: #999;
+  color: var(--light-text);
   margin-bottom: 10px;
 }
 
 .exp-desc {
   font-family: Georgia, serif;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--light-text);
   line-height: 1.75;
 }
