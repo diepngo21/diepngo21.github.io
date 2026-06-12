@@ -8,7 +8,7 @@ export const Main = () => {
       <div className="hero-content">
         <div className="hero-left">
           <h1 className="hero-name">
-            <span>Diep</span>
+            <span>Diep </span>
             <span>Ngo</span>
           </h1>
           <p className="hero-role">

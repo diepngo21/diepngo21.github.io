@@ -4,7 +4,6 @@
   padding: 60px var(--side-pad) 0;
 }
 
-/* ── Name + subtitle ── */
 .hero-content {
   display: flex;
   align-items: flex-start;
@@ -19,11 +18,11 @@
 
 .hero-name {
   display: flex;
-  flex-direction: column;
   font-family: Georgia, serif;
   font-size: clamp(70px, 14vw, 112px);
   font-weight: 400;
   letter-spacing: -4px;
+  gap: 28px;
   line-height: 0.95;
   color: var(--dark);
   margin-bottom: 20px;
@@ -125,7 +124,9 @@
   letter-spacing: 2px;
   text-decoration: none;
   border: 0.8px solid var(--dark);
-  transition: background 0.2s ease, color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
 .btn-outline:hover {

@@ -3,21 +3,28 @@ import "../style/components/workExperience.css";
 
 const experienceData = [
   {
-    date: "Feb 2025 – Present",
+    date: "Feb 2026 – June 2026",
     title: "Engineer Department Assistant",
     company: "Chabot College",
     description:
       "Organizing technical resources, maintaining equipment, and ensuring smooth lab operations for faculty and students.",
   },
   {
-    date: "Jan 2025 – Present",
+    date: "May 2024 – May 2026",
+    title: "Adaptive Technology Developer Intern",
+    company: "Studio Cassava",
+    description:
+      'Developed interactive systems utilizing real-time motion tracking, including a Musical Wall Piano built with OpenCV and MediaPipe that maps shadow data to audio for students with physical disabilities at the Santa Clara County Office of Education. Additionally, architected "Point Cloud Touch," a TouchDesigner installation that uses motion-capture data to render 60fps particle physics simulations driven by hand gestures.',
+  },
+  {
+    date: "Feb 2026 – Mar. 2026",
     title: "AI Trainer",
     company: "AI Handshake",
     description:
       "Evaluating machine learning outputs and providing quality control on client AI projects to improve accuracy.",
   },
   {
-    date: "Aug 2023 – Jan 2025",
+    date: "Aug 2023 – Jan 2026",
     title: "Lab Technician Assistant",
     company: "Chabot College",
     description:
@@ -34,7 +41,7 @@ const educationData = [
   },
   {
     date: "2023 – 2026",
-    title: "AS in Software Engineering (Transfer)",
+    title: "AS in Lib Arts & Sci-Sci, Math (Transfer)",
     company: "Chabot College",
     description:
       "Completed transfer requirements. Data Structures, Discrete Math, Physics.",
