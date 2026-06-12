@@ -7,16 +7,8 @@ import LoadingScreen from "./components/loadingScreen";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2500);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   if (isLoading) {
-    return <LoadingScreen />;
+    return <LoadingScreen onDone={() => setIsLoading(false)} />;
   }
 
   return (
