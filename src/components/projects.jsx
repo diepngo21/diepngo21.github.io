@@ -14,7 +14,7 @@ const projectsList = [
     name: "Market Management System",
     description: "Admin platform with RBAC for employees, inventory & payroll",
     tech: "JavaScript · RBAC · Admin UI",
-    href: "https://github.com/diepngo21",
+    href: "https://drive.google.com/drive/folders/10BFKbfS7DPzy3x9WE0DZYqd_k-7hXh3J?usp=sharing",
     label: "View →",
   },
   {
@@ -22,7 +22,7 @@ const projectsList = [
     name: "Point Cloud Touch",
     description: "Interactive AI art installation exhibited at ArtIS festival",
     tech: "Computer Vision · AI · Interactive",
-    href: "https://github.com/diepngo21",
+    href: "https://drive.google.com/drive/folders/1Oyv1AtkrCKqiGkqhLR3Jbkrckk9wXhvY?usp=sharing",
     label: "View →",
   },
   {
@@ -36,15 +36,17 @@ const projectsList = [
   {
     num: "05",
     name: "Bankist",
-    description: "Simulated banking app with transfers, loans & transaction history",
+    description:
+      "Simulated banking app with transfers, loans & transaction history",
     tech: "JavaScript · DOM · Finance UI",
-    href: "https://github.com/diepngo21",
+    href: "https://github.com/diepngo21/Bankist",
     label: "View →",
   },
   {
     num: "06",
     name: "Netflix Clone",
-    description: "Responsive streaming UI with dynamic content and API integration",
+    description:
+      "Responsive streaming UI with dynamic content and API integration",
     tech: "JavaScript · HTML/CSS · API",
     href: "https://diepngo21.github.io/Netflix_V2/",
     label: "View →",

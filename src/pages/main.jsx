@@ -12,7 +12,7 @@ export const Main = () => {
             <span>Ngo</span>
           </h1>
           <p className="hero-role">
-            Software Engineer &amp; Web Developer, Bay Area CA
+            Software Engineer / Web & AI Developer, Bay Area CA
           </p>
 
           <div className="hero-cta-row">
@@ -60,7 +60,7 @@ export const Main = () => {
 
         <div className="stat-divider"></div>
         <div className="stat-item">
-          <span className="stat-number">AI</span>
+          <span className="stat-number">AI </span>
           <span className="stat-label">Focused stack</span>
         </div>
         <div className="stat-divider"></div>
