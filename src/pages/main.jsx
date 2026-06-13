@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../style/pages/main.css";
 import { data } from "../data";
 
@@ -23,9 +24,9 @@ export const Main = () => {
             <a href="#projects-section" className="btn-dark">
               View Work
             </a>
-            <a href={`mailto:${data.gmail}`} className="btn-outline">
+            <Link to="/contact" className="btn-outline">
               Contact Me
-            </a>
+            </Link>
           </div>
         </div>
 
